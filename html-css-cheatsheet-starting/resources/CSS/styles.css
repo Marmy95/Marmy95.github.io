@@ -1,0 +1,101 @@
+body{
+    text-align: center;
+}
+h1{
+    font-family: 'Dancing Script';
+    
+}
+table, thead, tr, td{
+    border-color: green;
+    border: 2px solid;
+    margin: auto;
+    border-collapse: collapse;
+}
+tr{
+    background-color: white;
+    opacity: 50%;
+}
+
+
+.code{
+    font-family: "Lucida Console", Courier, monospace;
+    background-color: hsl(0, 2%, 88%);
+    font-weight: bold;
+}
+.description{
+    text-align: left;
+}
+.family{
+    font-family: 'Dancing Script';
+}
+.size{
+    font-size: 110%;
+}
+.style{
+    font-style: italic;
+}
+.weight{
+    font-weight: bold;
+}
+.spacing{
+    letter-spacing: 1.5;
+}
+.height{
+    line-height: 5;
+}
+.align{
+    text-align: center;
+}
+.decoration{
+    text-decoration-line: line-through;
+}
+
+/*animation test. Credit to Clueless Expert on YouTube for teaching me the blinking cursor and to Adam Abundis from https://www.sliderrevolution.com/ for the background idea*/
+.container{
+    display: inline-block;
+}
+ .anime{ 
+    letter-spacing: 10px;
+    border-right: 2px solid #fff; 
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap")
+  repeat ;scroll 0 0 rgba(0, 0, 0, 0);
+
+body {
+  background: #fff;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: "Lobster", cursive;
+}
+
+.wrapper {
+  animation: scroll 100s linear infinite;
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
+    #111111;
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -400%;
+  }
+}
